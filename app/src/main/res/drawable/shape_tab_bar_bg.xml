@@ -1,0 +1,5 @@
+<!--shape tab bar bg-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1E202C" />
+    <corners android:radius="8dp" />
+</shape>
