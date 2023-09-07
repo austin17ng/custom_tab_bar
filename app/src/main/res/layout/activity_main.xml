@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <com.example.myapplication.CustomTabBar
+        android:id="@+id/tab_bar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:entries="@array/tabs"
@@ -17,6 +18,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tab_bar"
+        app:layout_constraintStart_toStartOf="@id/tab_bar"
+        app:layout_constraintTop_toBottomOf="@id/tab_bar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
